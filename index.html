@@ -2035,6 +2035,9 @@ $(function() {
     function addOrnamentToTitle() {
         console.log('addOrnamentToTitle');
         console.log($('.frb-replace-countryname'));
+        setTimeout(function() {
+            console.log($('.frb-replace-countryname'));
+        }, 3000)
 
         $('.frb-replace-countryname').append('<img class="frb-message__title-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg">');
     }
