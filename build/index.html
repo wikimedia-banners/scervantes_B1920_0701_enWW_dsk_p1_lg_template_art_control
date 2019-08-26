@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: 2019-08-26T22:52:18+00:00 -->
+ <!-- CREATED AT: 2019-08-26T22:58:13+00:00 -->
 
 <style>
 /* Hide when editing */
@@ -2026,6 +2026,13 @@ $(function() {
             $('.frb-upsell-ask').text(upsellAmountFormatted);
         }
     };
+
+    addOrnamentToTitle();
+
+    function addOrnamentToTitle() {
+        $('.frb-replace-countryname').after('<img class="frb-message__title-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg">');
+    }
+    
 
     $('.frb-amounts').on('input change', function(e) {
         var target = $(e.target);
