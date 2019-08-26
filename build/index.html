@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: 2019-08-26T23:15:42+00:00 -->
+ <!-- CREATED AT: 2019-08-26T23:17:18+00:00 -->
 
 <style>
 /* Hide when editing */
@@ -61,6 +61,25 @@
     vertical-align: middle;
     background: #DDD;
 }
+.frb-message__icon-placeholder :before,
+.frb-message__icon-placeholder :after {
+    position: absolute;
+    content: "";
+    left: 29px;
+    top: 0;
+    width: 29px;
+    height: 58px;
+    background: red;
+    border-radius: 29px 29px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+.frb-message__icon-placeholder :after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
 .frb-message__with-ornament {
     position: relative;
 }
