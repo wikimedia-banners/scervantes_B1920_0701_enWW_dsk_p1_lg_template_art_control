@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: 2019-08-26T22:24:42+00:00 -->
+ <!-- CREATED AT: 2019-08-26T22:32:26+00:00 -->
 
 <style>
 /* Hide when editing */
@@ -79,13 +79,13 @@
     position: absolute;
     bottom: -20px;
     left: -7px;
-    width: 85px;
+    width: 63px;
 }
 .frb-message__bottom-right-ornament {
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 186px;
+    width: 124px;
 }
 
 /* --- Main banner wrapper --- */
@@ -210,12 +210,6 @@ body.rtl .frb .frb-close {
 
 .frb-message-inner {
     z-index: 1;
-}
-
-@media all and (min-width: 1100px) {
-    .frb-message-inner {
-        padding: 15px 26px 19px;
-    }
 }
 
 @media (min-width: 1100px) {
@@ -344,19 +338,6 @@ body.rtl .frb-message-icon {
     background: #fff;
 }
 
-/*Triangle in article and fixed expanded state*/
-
-.frb-triangle:before {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    left: -25px;
-    margin-top: -13px;
-    content: " ";
-    border: 10px solid transparent;
-    border-left-color: #900;
-    pointer-events: none;
-}
 
 .frb-form-wrapper fieldset {
     border: 0;
@@ -1005,15 +986,10 @@ body.rtl .frb-checkbox {
 .frb-smallprint {
     font-size: 12px;
     line-height: 1.5; /*18px @12px*/
-    color: #54595d;
     font-weight: normal;
 }
-.frb-smallprint a {
-    color: #54595d;
-    text-decoration: underline;
-}
 .frb-smallprint a:hover {
-    color: #000;
+    text-decoration: underline;
 }
 
 .frb-footer {
