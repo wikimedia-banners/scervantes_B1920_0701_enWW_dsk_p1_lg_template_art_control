@@ -104,8 +104,8 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 124px;
-    z-index: -1;
+    width: 116px;
+    z-index: 1;
 }
 .frb-message__title-ornament {
     position: absolute;
@@ -184,7 +184,7 @@
 .frb .frb-close {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -6px;
     width: 18px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23000' fill='none' stroke-linecap='round'%3E%3Cpath d='M1 1 l8 8 M9 1 l-8 8'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -1536,11 +1536,14 @@ button.frb-nag-btn:hover {
 
         <div class="frb-form-wrapper">
 
+            <button class="frb-icon-btn frb-close" aria-label="{{{FR2015_translations,close}}}"></button>
+
+
             <form id="frb-form">
 
                 <div class="frb-step frb-step-1">
 
-                    <button class="frb-icon-btn frb-close" aria-label="{{{FR2015_translations,close}}}"></button>
+                    <!-- <button class="frb-icon-btn frb-close" aria-label="{{{FR2015_translations,close}}}"></button> -->
 
                     <fieldset class="frb-frequency">
                         <legend class="error-highlight">1. {{{FR2015_translations,how-often}}}</legend>
