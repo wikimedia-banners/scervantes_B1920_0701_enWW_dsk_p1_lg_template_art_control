@@ -49,13 +49,11 @@
     font-size: 34px;
     color: #222222; 
 }
-.frb-message__icon-placeholder {
-    display: inline-block;
-    width: 58px;
-    height: 58px;
+.frb-message__title-icon {
     vertical-align: middle;
     position: relative;
-    margin-right: 10px;
+    margin-right: 10px; 
+    display: inline-block;
 }
 .frb-message__icon-placeholder:before,
 .frb-message__icon-placeholder:after {
@@ -1509,7 +1507,7 @@ button.frb-nag-btn:hover {
                 
 
                 <div class="frb-message__title">
-                    <span class="frb-message__icon-placeholder"></span>
+                    <img class="frb-message__title-icon" src="https://upload.wikimedia.org/wikipedia/donate/3/3c/Frb-heart.gif">    
                     {{{FR2015_translations,dsk-lg-greeting}}}
                 </div>
 
@@ -2196,7 +2194,9 @@ $(function() {
     $('.frb-step-upsell .frb-back').on('click', function(e) {
         if ( frb.optinRequired ) {
             frb.showStep('optin');
+            $('.frb-close').hide();
         } else {
+            $('.frb-close').show();
             frb.showStep('1');
         }
         return false;
