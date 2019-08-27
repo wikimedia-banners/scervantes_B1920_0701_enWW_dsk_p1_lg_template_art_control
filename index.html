@@ -184,7 +184,7 @@
 .frb .frb-close {
     position: absolute;
     top: 0;
-    right: -6px;
+    right: -12px;
     width: 18px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cg stroke='%23000' fill='none' stroke-linecap='round'%3E%3Cpath d='M1 1 l8 8 M9 1 l-8 8'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
@@ -198,7 +198,7 @@ body.rtl .frb .frb-close {
 .frb .frb-back {
     position: absolute;
     top: 0;
-    left: 0;
+    left: -12px;
     width: 20px;
     height: 18px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 16'%3E%3Cg fill='none' fill-rule='evenodd' transform='translate(1 1)'%3E%3Cpath stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.778' d='M7.181 13.285L.753 7 7.181.715'%3E%3C/path%3E%3Crect fill='%23000' width='18.182' height='1.778' x='.818' y='6.111' rx='.889'%3E%3C/rect%3E%3C/g%3E%3C/svg%3E");
@@ -1537,6 +1537,7 @@ button.frb-nag-btn:hover {
         <div class="frb-form-wrapper">
 
             <button class="frb-icon-btn frb-close" aria-label="{{{FR2015_translations,close}}}"></button>
+            <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button>
 
 
             <form id="frb-form">
@@ -1708,7 +1709,7 @@ button.frb-nag-btn:hover {
 
                 <div class="frb-step frb-step-optin">
 
-                    <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button>
+                    <!-- <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button> -->
 
                     <fieldset class="frb-fieldset frb-optin">
                         <legend>4. {{{FR2015_translations,optin-we-need-to-stay-short}}}</legend>
@@ -1745,7 +1746,7 @@ button.frb-nag-btn:hover {
 
                 <div class="frb-step frb-step-upsell">
 
-                    <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button>
+                    <!-- <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button> -->
 
                     <div class="frb-upsell">
                         <p class="frb-upsell-cta">{{{FR2015_translations,why-not-make}}}</p>
@@ -1770,7 +1771,7 @@ button.frb-nag-btn:hover {
 
                 <div class="frb-step frb-step-monthly-diff-amt">
 
-                    <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button>
+                    <!-- <button class="frb-icon-btn frb-back" aria-label="{{{FR2015_translations,back}}}"></button> -->
 
                     <p class="frb-upsell-ty">{{{FR2015_translations,thank-you-support}}}</p>
                     <div class="frb-amt-monthly">
