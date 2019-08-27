@@ -76,7 +76,9 @@
     transform: rotate(45deg);
     transform-origin: 100% 100%;
 }
-
+.frb-replace-countryname {
+    position: relative;
+}
 .frb-message__with-ornament {
     position: relative;
 }
@@ -1509,10 +1511,7 @@ button.frb-nag-btn:hover {
 
                 <div class="frb-message__title">
                     <span class="frb-message__icon-placeholder"></span>
-
                     {{{FR2015_translations,dsk-lg-greeting}}}
-
-                    <!-- To all our readers in <span class="frb-message__with-ornament"><span class="frb-replace-countryname"></span><img class="frb-message__title-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg"></span>, -->
                 </div>
 
                 <div class="frb-message__container">
@@ -2118,12 +2117,6 @@ $(function() {
     addOrnamentToTitle();
 
     function addOrnamentToTitle() {
-        console.log('addOrnamentToTitle');
-        console.log($('.frb-replace-countryname'));
-        setTimeout(function() {
-            console.log($('.frb-replace-countryname'));
-        }, 3000)
-
         $('.frb-replace-countryname').append('<img class="frb-message__title-ornament" src="https://upload.wikimedia.org/wikipedia/donate/c/c1/Frb-stripe-ornament.jpg">');
     }
     
