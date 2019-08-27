@@ -1,6 +1,6 @@
 <!-- Large desktop banner. Must be used with "Large banner limit and switch" mixin -->
 
- <!-- CREATED AT: 2019-08-27T05:14:14+00:00 -->
+ <!-- CREATED AT: 2019-08-27T05:16:48+00:00 -->
 
 <style>
 /* Hide when editing */
@@ -1891,11 +1891,9 @@ frb.showStep = function( step ) {
     }
 
     if ( step === '1' ) {
-        $('.frb-close').show();
         moveVisible( $('.frb-step-1') );
           moveRight( $('.frb-step-optin, .frb-step-upsell, .frb-step-monthly-diff-amt') )
     } else if ( step === 'optin' ) {
-        $('.frb-close').hide();
            moveLeft( $('.frb-step-1') );
         moveVisible( $('.frb-step-optin') );
           moveRight( $('.frb-step-upsell, .frb-step-monthly-diff-amt') );
@@ -2193,6 +2191,7 @@ $(function() {
 
     /* -- Back buttons -- */
     $('.frb-step-optin .frb-back').on('click', function(e) {
+        $('.frb-close').show();
         frb.showStep('1');
         return false;
     });
@@ -2200,7 +2199,9 @@ $(function() {
     $('.frb-step-upsell .frb-back').on('click', function(e) {
         if ( frb.optinRequired ) {
             frb.showStep('optin');
+            $('.frb-close').hide();
         } else {
+            $('.frb-close').show();
             frb.showStep('1');
         }
         return false;
