@@ -2179,6 +2179,7 @@ $(function() {
                 frb.showStep('optin');
             } else if ( frb.upsellPossible() ) {
                 frb.showStep('upsell');
+                $('.frb-close').hide();
             } else {
                 frb.submitForm( frb.storedOptions );
             }
@@ -2188,7 +2189,7 @@ $(function() {
 
     /* -- Back buttons -- */
     $('.frb-step-optin .frb-back').on('click', function(e) {
-        $('.frb-close').show();
+        // $('.frb-close').show();
         frb.showStep('1');
         return false;
     });
@@ -2196,9 +2197,9 @@ $(function() {
     $('.frb-step-upsell .frb-back').on('click', function(e) {
         if ( frb.optinRequired ) {
             frb.showStep('optin');
-            $('.frb-close').hide();
+            // $('.frb-close').hide();
         } else {
-            $('.frb-close').show();
+            // $('.frb-close').show();
             frb.showStep('1');
         }
         return false;
